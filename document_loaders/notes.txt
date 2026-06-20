@@ -1,0 +1,35 @@
+ I started programming 12 years ago. I started as an undergraduate with C and C++, then I worked a lot with Java. I also had lots of projects with Python. My graduation project was focusing on Ruby for a year! Then after graduation, I settled with Chrome Extension Development — mainly JavaScript — and Ruby On Rails — mainly Ruby —, to discover that JavaScript is my favorite language.
+
+Many people assume that if you love JS, then you tried no other language. Yet, for me, this is not the case at all. I love JS because of many reasons that I will list here. It doesn't mean I hate other languages; I love each language in a specific context. It is just that JS suits me most. So let me share my reasons.
+
+It works for most purposes
+Usually, with any other programming language, there is the best use for it. So if I am considering a Machine Learning project, I would say Python. If I am considering a system programming language, I would say C or C++. It all depends on what is my project about, to decide what language suits my project. Yet, for JS it is there for most purposes.
+
+If I want:
+
+Backend Project (NodeJS)
+Frontend (React, Vue, or Angular)
+Mobile Applications (React Native)
+Desktop Applications (Electron)
+Machine Learning (TensorFlow.js)
+There are a lot of libraries that you can use for almost everything. I don't think I can go deep with JS for system programming though, but I don't think daily development works with system programming, anyway.
+
+It serves the web
+A long time ago, developers used to create lots of Desktop applications. Now, everything changed. I guess whenever you think about any idea. You consider how it will be on the web. Any web application — no matter how big or small — has Javascript in it. So the more professional you are in this language, the more you can help it serve you. You may discover you can apply any of your ideas fast using just JS and deploy it to the world. Unlike other languages, learn more about how to connect your code to a web application which takes time and energy.
+
+It is easy to learn
+I didn't have to learn JS. I depended on my old knowledge of all other programming languages, and I just coded! I felt at home to just do everything I want with before learning JS, anyway. Later on, I went deeper to have a cleaner code and know more features I can use. Yet, it is still so easy, readable, and flexible to code with.
+
+ES7 update is just outstanding
+JS had a major update in 2015, and 2016 which was just perfect. By this update, we all felt how JS grows and how you can code freely with JS finding all features you love in any other language. Also, it was proof of how alive this language is and ready to stay alive for longer.
+
+Browser Extensions can't be developed without JS
+I am Chrome Extension Developer, so this is how I fell in love with JS. There is no other way to do an extension to Chrome or Firefox and most popular browsers out there without JS. As extensions' development focus on doing most of the work on the client-side. Extensions offer endless ideas to do that there is no other way to do it. So if you want to be in this field, you have to be outstanding at JS.
+
+Doing things at the client side is powerful
+The way some people teach JS is trivial. They just show that JS is part of the front-end and that you just change the background color using JS. Yet, this is not how deep JS can go. As mentioned in the last point, most extensions' work depends on putting all the algorithms and code on the client-side using JS. You might think as first thought, why would I want my functionality to be on the client-side anyway, but think deeper, you want that! Any kind of functionality that can be on the client-side, let it be on the client-side instead of the server. Because this means, a fast website and less work are needed on your server which leads to less cost. I managed earlier to run big ideas for free for thousands of users just because I am doing everything on their side.
+
+Getting into mobile development fast
+As developers, we all get ideas for mobile apps. Earlier we had no time to just learn how to do this in a native way as this included learning a lot of new things first. Yet, knowing JS, it might take you a short time to just get into ReactNative and code your first mobile app. As it all depends on JS, anyway.
+
+There are many other reasons that are related to the language itself, but I loved to give the reasons that anyone who didn't try JS yet relates to. In the end, it is not about the language you use, it is about what you do.
