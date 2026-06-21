@@ -1,8 +1,20 @@
 from langchain_community.document_loaders import TextLoader
+from langchain_community.document_loaders.base_o365 import CHUNK_SIZE
+from langchain_text_splitters import CharacterTextSplitter
+
+splitter = CharacterTextSplitter(
+    separator="",
+    chunk_size=10,
+    chunk_overlap=1,
+)
 
 data = TextLoader("document_loaders/notes.txt")
 
 # print(data)
-
 docs = data.load()
-print(len(docs))
+chunks = splitter.split_documents(docs)
+
+# print(len(chunks))
+# print(chunks)
+for i in chunks:
+    print(i.page_content)
