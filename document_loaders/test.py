@@ -1,5 +1,4 @@
 from langchain_community.document_loaders import TextLoader
-from langchain_community.document_loaders.base_o365 import CHUNK_SIZE
 from langchain_text_splitters import CharacterTextSplitter
 
 splitter = CharacterTextSplitter(
