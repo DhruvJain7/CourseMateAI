@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 from langchain_classic.retrievers.multi_query import MultiQueryRetriever
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 from langchain_mistralai import ChatMistralAI
@@ -22,7 +22,7 @@ docs = [
 ]
 
 
-embeddings = HuggingFaceEmbeddings()
+embeddings = OpenAIEmbeddings()
 
 vectorstore = Chroma.from_documents(docs, embeddings)
 
