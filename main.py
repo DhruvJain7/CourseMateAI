@@ -11,11 +11,50 @@ embedding_model = OpenAIEmbeddings()
 vectorstore = Chroma(persist_directory="chroma_DB", embedding_function=embedding_model)
 
 retriever = vectorstore.as_retriever(
-    search_type = "mmr",
+    search_type="mmr",
     search_kwargs={
-        "k":4,
-        "fetch_k" : 10,
-        "lambda_mult":
-
-    }
+        "k": 4,
+        "fetch_k": 10,
+        "lambda_mult": 0.5,
+    },
 )
+
+llm = ChatMistralAI(model="mistral-small-2506")
+
+# prompt template
+prompt = ChatPromptTemplate.from_messages(
+    [
+        (
+            "system",
+            """
+            You are a helpful AI assistant.
+            Use ONLY the provided context to answer the question.
+            It the answer is not present in the context , say:"I couldn't find the answer in the document"
+            """,
+        ),
+        (
+            "human",
+            """
+               Context :{context}
+               Question : {question}
+            """,
+        ),
+    ]
+)
+print("Rag system created")
+
+print("Press 0 to exit")
+
+while True:
+    query = input("You: ")
+    if query == "0":
+        break
+    docs = retriever.invoke(query)
+
+    context = "\n\n".join([doc.page_content for doc in docs])
+
+    final_prompt = prompt.invoke({"context": context, "question": query})
+
+    response = llm.invoke(final_prompt)
+
+    print(f"\n AI:{response.content}")
